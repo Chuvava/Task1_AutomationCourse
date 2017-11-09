@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AllTests>
+ <TestWithDefaultParameters ink="1000" word="Automation" 
+expectedWord="Automation" expectedColor="BLUE" expectedBool="true" size="1,0"
+  inkNegative="5" emptyWord="" colorLower="blue"/> 
+<Test1 ink="1000" expectedBool="true" />
+<Test2 ink="0" expectedBool="false"/>
+<Test2 ink="-10" expectedBool="false"/>
+<Test3 ink="0" expectedWord="" word="Automation" />
+<Test4 ink="1000" word="Automation" expectedWord="Automation"/>
+<Test5 ink="5" word="Automation" expectedWord="Autom" />
+<Test6 ink="1000" expectedColor="BLUE"/>
+<Test7 ink="1000" size="1,0" color="YELLOW" expectedColor="YELLOW" />
+<Test8910 ink="1000" size="1,0" color="BLUE" /> 
+<Test11 ink="100" size="15,0" word="Automation" />
+<Test12 ink="1000" color="blue" expectedColor="blue" size="1,0"></Test12>
+<Test13 ink="1000" size="0,0" word="Automation" expectedWord=""/>
+<Test14 ink="1000" size="-2,0" word="Automation" expectedWord=""/>
+<Test15 ink="1000"/>
+</AllTests>
