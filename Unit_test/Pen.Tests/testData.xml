@@ -1,20 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <AllTests>
- <TestWithDefaultParameters ink="1000" word="Automation" 
-expectedWord="Automation" expectedColor="BLUE" expectedBool="true" size="1,0"
-  inkNegative="5" emptyWord="" colorLower="blue"/> 
-<Test1 ink="1000" expectedBool="true" />
-<Test2 ink="0" expectedBool="false"/>
-<Test2 ink="-10" expectedBool="false"/>
-<Test3 ink="0" expectedWord="" word="Automation" />
-<Test4 ink="1000" word="Automation" expectedWord="Automation"/>
-<Test5 ink="5" word="Automation" expectedWord="Autom" />
-<Test6 ink="1000" expectedColor="BLUE"/>
-<Test7 ink="1000" size="1,0" color="YELLOW" expectedColor="YELLOW" />
-<Test8910 ink="1000" size="1,0" color="BLUE" /> 
-<Test11 ink="100" size="15,0" word="Automation" />
-<Test12 ink="1000" color="blue" expectedColor="blue" size="1,0"></Test12>
-<Test13 ink="1000" size="0,0" word="Automation" expectedWord=""/>
-<Test14 ink="1000" size="-2,0" word="Automation" expectedWord=""/>
-<Test15 ink="1000"/>
+<TestIsWork ink="1000" expectedBool="true" />
+<TestIsWork ink="0" expectedBool="false"/>
+<TestIsWork ink="-10" expectedBool="false"/>
+<TestWriteDefaultSize ink="0" expectedWord="" word="Automation" />
+<TestWriteDefaultSize ink="1000" word="Automation" expectedWord="Automation"/>
+<TestWriteDefaultSize ink="5" word="Automation" expectedWord="Autom" />
+<TestGetColorDefault ink="1000" expectedColor="BLUE"/>
+<TestGetColorNotDefault ink="1000" size="1,0" color="YELLOW" expectedColor="YELLOW" />
+<TestGetColorNotDefault ink="1000" color="blue" expectedColor="blue" size="1,0"></TestGetColorNotDefault>
+<TestPenConstructor ink="1000" size="1,0" color="BLUE" />   
+<TestSizeAndLengthMoreThanInk ink="100" size="15,0" word="Automation" />
+<TestSizeIsNullOrNegative ink="1000" size="0,0" word="Automation" expectedWord=""/>
+<TestSizeIsNullOrNegative ink="1000" size="-2,0" word="Automation" expectedWord=""/>
+<TestDoSomethingElse ink="1000"/>
+<TestTextWithSpaces ink="10" word="               something" expectedWord="               something" expectedInk="1000"/>
+<TestTextWithSpaces ink="1000" word="               something" expectedWord="               something" expectedInk="1000"/>
+<TestTextWithSpaces ink="5" word="some " expectedWord="some " expectedInk="1000"/>
+<TestSizeMoreThanDefaultPositive ink="1000" size="5,0" word="Automation" />
+<TestPenConstructorWithNegativeValues ink="-1000" size="1,0"/>
+<TestPenConstructorWithNegativeValues ink="1000" size="-1,0"/>
+<TestPenConstructorWithNegativeValues ink="-1000" size="-1,0"/>
+<TestPenConstructorWithNegativeValues ink="0" size="0"/>
+<TestWrongDoubleToInt ink="20" size="1,999" word="Automation"/>
 </AllTests>
